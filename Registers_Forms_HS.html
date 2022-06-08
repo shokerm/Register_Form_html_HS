@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work - Register form</title>
+</head>
+<body>
+
+    <!--First Name and Last Name with validations-->
+    <form action="">
+    <h1>Register</h1>
+    <label for="FirstName">First Name:</label>
+    <input type="text" name="First Name" id="FirstName" placeholder="Moshe" pattern="[a-z]{1,15}" title="Need name  with letters a-z and between 1-15 leeters" required>
+    <label for="LastName">Last Name:</label>
+    <input type="text" name="Last Name" id="LastName" placeholder="Shoker" pattern="[a-z]{1,15}" title="Need name  with letters a-z and between 1-15 leeters" required> <br><br>
+    <!--Gender form with fieldset and legend-->
+    <fieldset>
+    <legend>Gender</legend>
+    <label for="Male">Male</label>
+    <input type="radio" name="Gender" id="Male" checked>
+    <label for="Female">Female</label>
+    <input type="radio" name="Gender" id="Female">
+    <label for="Other">Other</label>
+    <input type="radio" name="Gender" id="Other">
+    </fieldset> <br>
+   <!--Email and Password forms with validations-->
+   <label for="email">Email:</label>
+   <input type="email" name="Email" id="email" placeholder="*****@gmail.com"  required>
+   <label for="password">Password</label>
+   <input type="password" name="password" id="password" pattern="[a-zA-Z0-9]{1,8}" title="Password must to be from leeters a-z and numbers 1-9" required> <br><br>
+   <!--Birhday calendar and agreemnet checkboxes-->
+   <label for="date">Birthday:</label>
+   <input type="date" name="" id="date" required> <br><br>
+   <label for="checkbox">I agree the terms and conditions</label>
+   <input type="checkbox" name="checkbox" id="checkbox" required> <br><br>
+   <!--Select Options form with validations-->
+   <label for="Sellection">Years of experience in the profession:</label>
+   <select name="Sellection" id="Sellection" required>
+      <option value="" disabled selected >Select</option>
+      <option value="1-3">1-3 Years</option>
+      <option value="3-5">3-5 Years</option>
+      <option value="more than 5 years">more than 5 years</option>
+      <option value="Just started">Just started</option>
+  </select > <br> <br>
+
+  <button type="submit">Submit</button>
+</form>
+
+    
+</body>
+</html>
